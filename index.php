@@ -31,11 +31,13 @@
 	<h1>
 <Form Name="" Method="POST" Action="upload.php" enctype="multipart/form-data">
 <Input class="btn btn-lg btn-success" Type="file" name="file" accept="video/*">
-<button class="btn btn-lg btn-success" type="submit" name="submit">upload the video u won't</button>
+<br>
+<input type="text" id="title" name="title" value="insert title...">
+<br>
+<button class="btn btn-lg btn-success" type="submit" name="submit" style="width: 515px;">upload the video u won't</button>
 </Form>
 </h1>
 </div>
-
 <body>
 
 
