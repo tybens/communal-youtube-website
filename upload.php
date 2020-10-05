@@ -2,21 +2,21 @@
 if (isset($_POST['submit'])) {
 	$file = $_FILES['file'];
 
-	$fileName = $_FILES['file']['name'];
-	$fileTmpName = $_FILES['file']['tmp_name'];
-	$fileSize = $_FILES['file']['size'];
-	$fileError = $_FILES['file']['error'];
-	$fileType = $_FILES['file']['type'];
+	$fileName = $file['name'];
+	$fileTmpName = $file['tmp_name'];
+	$fileSize = $file['size'];
+	$fileError = $file['error'];
+	$fileType = $file['type'];
+	$fileChosenName = $_POST['title'];
 
 	$fileExt = explode('.', $fileName); # take apart the string
 	$fileActualExt = strtolower(end($fileExt));
-
 	$allowed = array('webm', 'mpg', 'mp4', 'm4p', 'avi', 'mov', 'wmv', 'mpeg');
 
 	if (in_array($fileActualExt, $allowed)) {
 		if ($fileError === 0) {
-			# $fileNameNew = uniqid('', true).".".$fileActualExt; # gives a unique name based on milliseconds currently
-			$fileDestination = 'uploads/'.$fileName;
+			$fileNameNew = $fileChosenName.".".$fileActualExt;
+			$fileDestination = 'uploads/'.$fileNameNew;
 			move_uploaded_file($fileTmpName, $fileDestination);
 			header("Location: index.php?uploadsuccess");
 		} else {
