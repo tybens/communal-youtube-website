@@ -4,7 +4,7 @@
 
 ## the idea:
 Allow any user to anonymously contribute to the same youtube channel... communally.
-#### the features:
+#### features:
 a button that allows users to select a video to be anonymously uploaded to the same youtube channel. 
 
 
