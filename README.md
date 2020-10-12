@@ -1,6 +1,7 @@
 # [Communal Youtube Website](https://communalyoutube.com)
 
 > This is the front-end website design to support the communal youtube channel. 
+<img src="https://github.com/tybens/communal-youtube-website/blob/main/pics/website_design.png" width="1000">
 
 ## the idea:
 Allow any user to anonymously contribute to the same youtube channel... communally.
