@@ -15,7 +15,7 @@ body {
     text-align: center;
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 0px;
     width: 100%;
     height: 1px;
     white-space: nowrap;
@@ -99,24 +99,25 @@ a:hover
   background: #859179;
   position: relative;
   color: white;
-  font-size: 25px;
+  font-size: 30px;
 }
 .bottomright {
   position: absolute;
   bottom: 8px;
   right: 16px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .btn {
-  display: inline-block;
+  display: inline;
   border: none;
+  padding: 6px 12px;
+  margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
   text-align: center;
   cursor: pointer;
   border-radius: 4px;
-  width: 900px;
-  background-color: #f0f0f0;
+
 }
 .headerHomeImage {
   width: 16rem;
@@ -128,8 +129,13 @@ a:hover
 
 .btn-lg {
   padding: 10px 16px;
-  font-size: 40px;
+  font-size: 27px;
   border-radius: 6px;
+}
+.btn-sucess {
+  color: #fff;
+  background-color: #2f2f2f;
+  border-color: #2f2f2f;
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -138,42 +144,26 @@ a:hover
   background-color: #2f2f2f;
   border-color: #2f2f2f;
 }
-.custom-file-upload {
-    display: inline-block;
-    margin-bottom: 0;
-    font-size: 40px;
-    font-weight: normal;
-    color: #2f2f2f;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 6px;
-    width: 900px;
-    background-color: #f0f0f0;
-
-}
-.custom-file-upload:hover,
-.custom-file-upload:focus,
-.custom-file-upload:active {
-    color: #fff;
-    background-color: #2f2f2f;
-    border-color: #2f2f2f;
-}
 input[type=text] {
-  width: 900px;
-  height: 50px;
-  padding: 10px 20px;
+  width: 515px;
+  padding: 12px 20px;
   margin: 8px 0;
-  font-size: 20px;
+  box-sizing: border-box;
   border: 3px solid #ccc;
   outline: none;
 }
-input[type=text]:focus,
+input[type=text]:focus {
+  -webkit-transition: 0.5s;
+  border: 3px solid #2f2f2f;
+}
 input[type=text]:hover {
-  border: 4px solid #2f2f2f;
+  border: 3px solid #2f2f2f;
 }
 h1 {
 	text-align: center;
-	font-size: 30pt;
+	font-family="Times New Roman";
+	font-size: 20pt;
+	color= #ffffff;
 }
 img {
   max-width: 100%;
