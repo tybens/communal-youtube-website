@@ -3,7 +3,7 @@
 
 	<head>
 		<title>Communal Youtube</title>
-		<link href="style.css" type="text/css" rel="stylesheet">
+		<link href="./style.css" type="text/css" rel="stylesheet">
   </head>
 
 
@@ -24,17 +24,19 @@
 	style="width:200px;height:200px"
 />
 </a>
- <div class="bottomright" style="font-size: 10px;"> this website was made by <b><a href="https://github.com/tybens">tybens</a></b><br>please dm me on <b><a href="https://www.linkedin.com/in/tyler-benson-919b561b2" style="font-size: 12px;">LINKEDIN</a></b> I'm lonely </p>
+ <div class="bottomright"> this website was made by <b><a href="https://github.com/tybens">tybens</a></b><br>please dm me on <b><a href="https://www.linkedin.com/in/tyler-benson-919b561b2">LINKEDIN</a></b> I'm lonely </p>
 </div>
 </div>
 <div>
 	<h1>
 <Form Name="" Method="POST" Action="upload.php" enctype="multipart/form-data">
-<Input class="btn btn-lg btn-success" Type="file" name="file" accept="video/*">
+	<label class="custom-file-upload">Browse Files...
+<Input style="display:none;" Type="file" name="file" accept="video/*">
+</label>
 <br>
 <input type="text" id="title" name="title" value="insert title...">
 <br>
-<button class="btn btn-lg btn-success" type="submit" name="submit" style="width: 515px;">upload the video u won't</button>
+<button class="btn btn-lg btn-success" type="submit" name="submit">upload the video u won't</button>
 </Form>
 </h1>
 </div>
