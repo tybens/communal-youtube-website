@@ -1,6 +1,6 @@
 # [Communal Youtube Website](https://communalyoutube.com)
 
-> This is the front-end website design for the project of a communal youtube channel. 
+> This is the front-end website design to support the communal youtube channel. 
 
 ## the idea:
 Allow any user to anonymously contribute to the same youtube channel... communally.
